@@ -1,0 +1,215 @@
+/* General styles */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+/*@import url(xmlns:th="https://www.thymeleaf.org");*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: -webkit-body;
+    font-size: 30px;
+    margin-right: auto;
+}
+
+.logo {
+    border: 2px solid black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 8px;
+}
+
+.title {
+    color: whitesmoke;
+    text-shadow: 5px 4px 3px grey;
+    font-family: "Audiowide", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    place-items: center;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+    /* margin-left: 100%; */
+    margin-left: 957px;
+    margin-right: 0;
+    margin-top: -77px;
+    /* font-weight: bold; */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.nav-links li {
+    margin: 0 30px;
+
+}
+
+a:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* General styles end*/
+.container {
+    max-width: 150rem;
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.card {
+    background: #262525;
+    color: #fff;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+.card-title-large {
+    font-family: "Audiowide", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    color: #1d1d1d;
+    user-select: none;
+    transform: translateX(7rem);
+    transition: transform 2.5s;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    text-align: center;
+
+}
+
+.card-title-small {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+.card-description {
+    font-family: "Trirong", serif;
+    ;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+.card-cta {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+}
+
+.card:hover .card-cta {
+    background-color: #262525;
+}
+
+.card:hover .card-title-large {
+    transform: translateX(-115%);
+    color: #fff;
+}
+
+.card.graffiti:hover {
+    background-image: url(/images/Graffiti\ \(1\).jpeg);
+}
+
+.card.beatbox:hover {
+    background-image: url(/images/BeatBoxing.jpg);
+}
+
+.card.rapping:hover {
+    background-image: url(/images/Rapping.jpg);
+}
+
+.card.breaking:hover {
+    background-image: url(/images/Breaking1.jpeg);
+}
+
+.card.djing:hover {
+    background-image: url(/images/Djing2.jpg);
+}
+
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparet;
+    font-weight: bold;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#footer ul.social li a {
+    color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+    color: #e48d14;
+}

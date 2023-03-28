@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Hip Hop Chronicals</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="" th:href="@{/css/cardStyle.css}">
+    <link rel="icon" href=" " th:href="@{/images/logo.jpg}">
+
+</head>
+
+<body>
+<header>
+
+    <img class="logo" th:src="@{/images/logo1.png}" alt="websiteLogo">
+    <span class="title">Hip Hop Chronicals</span>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="" th:href="@{/mainPage}">Home</a></li>
+            <li><a href="" th:href="@{/mainPage}">Explore</a></li>
+            <li><a href="" th:href="@{/mainPage}">About</a></li>
+            <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="cards">
+        <div class="card graffiti">
+            <h2 class="card-title-large">Graffiti</h2>
+            <h3 class="card-title-small">Graffiti</h3>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                alias, aliquid aperiam deleniti doloremque dolores est fugiat, illum
+                inventore magni molestias nihil nisi optio possimus praesentium
+            </p>
+            <a href="#" class="card-cta">&rarr;</a>
+        </div>
+        <div class="card beatbox">
+            <h2 class="card-title-large">BeatBox</h2>
+            <h3 class="card-title-small">BeatBox</h3>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                alias, aliquid aperiam deleniti doloremque dolores est fugiat, illum
+                inventore magni molestias nihil nisi optio possimus praesentium
+            </p>
+            <a href="#" class="card-cta">&rarr;</a>
+        </div>
+
+        <div class="card rapping">
+            <h2 class="card-title-large">Rapping</h2>
+            <h3 class="card-title-small">Rapping</h3>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                alias, aliquid aperiam deleniti doloremque dolores est fugiat, illum
+                inventore magni molestias nihil nisi optio possimus praesentium
+            </p>
+            <a href="#" class="card-cta">&rarr;</a>
+        </div>
+
+        <div class="card breaking">
+            <h2 class="card-title-large">Breaking</h2>
+            <h3 class="card-title-small">Breaking</h3>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                alias, aliquid aperiam deleniti doloremque dolores est fugiat, illum
+                inventore magni molestias nihil nisi optio possimus praesentium
+            </p>
+            <a href="#" class="card-cta">&rarr;</a>
+        </div>
+
+        <div class="card djing">
+            <h2 class="card-title-large">Djing</h2>
+            <h3 class="card-title-small">Djing</h3>
+            <p class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                alias, aliquid aperiam deleniti doloremque dolores est fugiat, illum
+                inventore magni molestias nihil nisi optio possimus praesentium
+            </p>
+            <a href="#" class="card-cta">&rarr;</a>
+        </div>
+    </div>
+</div>
+
+<section id="footer">
+    <div class="container1">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="https://github.com/PrathmeshChalke/DigitalProfile"> <i
+                            class="fa fa-github"> </i> </a></li>
+                    <li class="list-inline-item"><a href="http://wa.me/+918007126580"> <i class="fa fa-whatsapp">
+                    </i> </a></li>
+                    <li class="list-inline-item"><a
+                            href="https://www.youtube.com/results?search_query=pirates+production"> <i
+                            class="fa fa-youtube"> </i> </a></li>
+                    <li class="list-inline-item"><a href="#"> <i class="fa fa-google-plus"> </i> </a></li>
+                    <li class="list-inline-item"><a href="mailto:prathmesh.chalke800@gmail.com"> <i
+                            class="fa fa-envelope">
+                    </i> </a></li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <p class="h6"> 2023 ? All right Reversed. <a class="text-green ml-2" href="#" target="_blank">
+                    &copy;Hip Hop Choricals </a></p>
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>

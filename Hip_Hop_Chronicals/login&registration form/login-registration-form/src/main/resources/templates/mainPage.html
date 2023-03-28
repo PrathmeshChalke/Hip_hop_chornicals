@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hip Hop Chronicals</title>
+    <link rel="icon" href="" th:href="@{/images/logo.jpg}" id="pfpic">
+    <link rel="stylesheet" href="" th:href="@{/css/style1.css}" />
+
+</head>
+
+<body>
+
+    <nav class=" navbar">
+        <h1 class="logo">HIP HOP CHRONICALS</h1>
+        <ul class="nav-links">
+            <a th:href="@{/mainPage}"><li>Home</li></a>
+            <a th:href="@{/registration}"><li>Events</li></a>
+            <a th:href="@{/registration}"><li>Explore</li></a>
+            <a th:href="@{/registration}"><li>About</li></a>
+            <a th:href="@{/registration}"><li>Contact</li></a>
+
+            <li class="ctn"><a href="" th:href="@{/registration}">Sign Up</a></li>
+        </ul>
+        <img th:src="@{/images/Menu-image.png}" alt="menu_image" class="menu-btn">
+
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore Hip Hop </h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+
+            <a th:href="@{/registration}" class="ctn"> Learn More</a>
+        </div>
+    </header>
+
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img th:src="@{/images/Grafiti3.jpg}" alt="Graffiti_image">
+                <h4>Graffiti</h4>
+                <p>graffiti, form of visual communication, usually illegal, involving the unauthorized marking of public
+                    space by an individual or group.</p>
+                <a th:href="@{/registration}" class="ctn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="../Images/BeatBoxing.jpg" alt="BeatBoxing_image">
+                <h4>BeatBoxing</h4>
+                <p>Beatboxing is a form of vocal percussion primarily involving the art of mimicking drum machines,
+                    using one's mouth, lips, tongue, and voice.</p>
+                <a th:href="@{/registration}" class="ctn">Learn More</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE DJING</h1>
+            <div class="line"></div>
+            <P>The role of a disk jockey, playing and mixing recorded music.</P>
+            <a th:href="@{registration}" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING SHOWS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam fuga eaque vero. Sit
+                    reprehenderit accusantium distinctio sunt cupiditate in, provident eos culpa doloremque at dolor
+                    assumenda temporibus consequuntur vel?</p>
+                <a th:href="@{/registration}"  class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="../Images/BeatBoxing.jpg" alt="BeatBoxing_image">
+                    <img src="../Images/Breaking1.jpeg" alt="Breaking_image">
+                    <img src="../Images/Rapping.jpg" alt="Rapping_image">
+                    <img src="../Images/Graffiti (1).jpeg" alt="Graffiti_image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p> Hip Hop Chronicals is optimized for learning. While using Hip Hop Chronicals, you agree to have read and
+            accepted our terms of use, cookie and privacy policy.
+        </p>
+        <button class="btn" id="twitter"><i class="fa fa-twitter"></i> <a href="https://twitter.com/home?lang=en"
+                target="_blank">
+                Twitter</a></button>
+
+        <button class="btn" id="instagram"><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/"
+                target="_blank">
+                Instagram</a></button>
+
+        <button class="btn" id="gmail"><i class="fa fa-envelope"></i> <a href="mailto:prathmesh.chalke800@gmail.com"
+                target="_blank">Gmail</a></button>
+
+        <button class="btn" id="linkin"><i class="fa fa-linkedin"></i> <a
+                href="https://www.linkedin.com/in/prathmesh-chalke-138926201/" target="_blank">Linkedin</a></button>
+
+        <button class="btn" id="youtube"><i class="fa fa-youtube"></i> <a
+                href="https://www.youtube.com/results?search_query=pirates+production" target="_blank
+            ">Youtube</a></button>
+
+        <button class="btn" id="whatsapp"><i class="fa fa-whatsapp"></i> <a
+                href="http://wa.me/+918007126580/">Whatsapp</a></button>
+
+
+        <p>&copy;2023 <a href="#">Hip Hop Chronicals</a></p>
+
+
+    </section>
+
+
+    <script>
+
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</body>
+
+</html>

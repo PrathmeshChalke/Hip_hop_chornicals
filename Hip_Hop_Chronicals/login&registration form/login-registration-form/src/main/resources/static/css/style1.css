@@ -1,0 +1,387 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+h1 {
+    text-shadow: 5px 4px 3px grey;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+
+}
+
+.logo:hover {
+    color: goldenrod;
+    cursor: pointer;
+
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/hip-hop-theme.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: crimson;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: crimson;
+    border-radius: 30px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(8, 8, 8);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 3.5vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+.events .ctn {
+    margin-top: 30px;
+    align-items: center;
+
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/Djing.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+}
+
+.explore-content p {
+    color: rgb(252, 249, 249);
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+}
+
+.content-col {
+    width: 40%;
+}
+
+.image-col {
+    width: 60%;
+}
+
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    width: 250px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.content-col h1 {
+    font-size: 7vmin;
+    color: rgb(8, 8, 8);
+}
+
+.content-col line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.content-col .ctn {
+    margin-left: -100px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 8px;
+    margin: 0;
+    background: black;
+    text-align: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+.btn {
+    background-color: rgb(19, 8, 6);
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5vh;
+    padding: 1vh;
+    margin: 0.1vh;
+    text-align: center;
+
+
+
+}
+
+#twitter:hover {
+    background-color: #2a7be4;
+}
+
+#instagram:hover {
+    background: radial-gradient(at 20% 128%,
+            #feda78 20%,
+            #e23467 60%,
+            #ac2bb3 90%);
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#gmail:hover {
+    background-color: #f73729;
+}
+
+#linkin:hover {
+    background-color: #0077b5;
+}
+
+#youtube:hover {
+    background-color: red;
+}
+
+#whatsapp:hover {
+    background-color: green;
+}
+
+
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background: whitesmoke;
+    color: rgb(220, 19, 19);
+    box-shadow: 5px 5px 5px #00000057;
+}
+
+li:hover {
+    color: #fc036b;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        font-family: "Audiowide", sans-serif;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    /* EVENTS */
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+    /* EXplore */
+    .explore-content {
+        width: 100%;
+    }
+
+    .tours .col {
+        width: 100%;
+    }
+
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-gallery img {
+        width: 90%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+
+
+}
