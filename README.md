@@ -1,11 +1,15 @@
-Step 1 : - Import file as Maven Project in inellj idea.
+Project: Hip Hop Chronicles
 
-Step 2 : - Connect to internet and download all dpendencies from pom.xml or Update Maven Project.
+Description: Hip Hop Chronicles is an information-based web application that provides insights and details about the five elements of hip hop. It was developed using Java, Spring Boot, HTML, and CSS.
 
-Step 3 : - Open mysql and start mysql server open mysql server and create new databse login_registration_form.
+Key Features:
 
-Step 4 : - Now run Application.java main file in intelj idea.
+Main Page: The main page showcases interesting facts and highlights about the different elements of hip hop.
+Registration: Users can register themselves by providing their information, which is stored in a database.
+Login: Registered users can log in using their credentials to access the main informative page.
+Responsibilities:
 
-Step 5 : - Open browser and type localhost:8080/mainPage to run the project.
-
-
+Developed the web application using Java, Spring Boot, HTML, and CSS.
+Designed and implemented the main page to display engaging content about hip hop elements.
+Implemented the registration functionality, allowing users to register and store their information in a database.
+Created the login page with credential validation to grant access to the main informative page.
